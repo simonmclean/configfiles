@@ -7,11 +7,15 @@ set showcmd
 syntax on
 set clipboard=unnamed
 
+" coc
+let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur']
+
 " formatting
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set wrap!
 
 " zfz overrides
 let g:fzf_commits_log_options = '--all --graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
