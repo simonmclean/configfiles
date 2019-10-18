@@ -1,14 +1,22 @@
 " Some basics
+set encoding=utf8
 set incsearch
 set backspace=start,eol,indent
 set autoindent
 set ruler
+set cursorline
 set showcmd
 syntax on
 set clipboard=unnamed
+set modifiable
+let mapleader = " "
+
+" NERDtree
+let NERDTreeShowHidden=1
 
 " coc
-let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur']
+let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur', 'coc-eslint']
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " formatting
 filetype plugin indent on
@@ -49,5 +57,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
