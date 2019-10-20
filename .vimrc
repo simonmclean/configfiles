@@ -9,6 +9,8 @@ set showcmd
 syntax on
 set clipboard=unnamed
 set modifiable
+set incsearch
+set hlsearch
 let mapleader = " "
 
 " NERDtree
