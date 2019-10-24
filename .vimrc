@@ -13,8 +13,11 @@ set incsearch
 set hlsearch
 let mapleader = " "
 
-" NERDtree
+" NERDTree
 let NERDTreeShowHidden=1
+
+" NERDComment
+let g:NERDSpaceDelims=1
 
 " coc
 let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur', 'coc-eslint']
