@@ -10,7 +10,7 @@ set clipboard=unnamed
 set modifiable
 let mapleader = " "
 
-" Syntax highlighting. Limited to 200 lines for performance reasons
+" Syntax highlighting
 syntax on
 set synmaxcol=200
 
@@ -64,5 +64,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
+Plug 'hail2u/vim-css3-syntax'
 
 call plug#end()
