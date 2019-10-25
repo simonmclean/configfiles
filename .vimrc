@@ -10,9 +10,15 @@ set clipboard=unnamed
 set modifiable
 let mapleader = " "
 
+" Use the old regex engine (performance fix)
+set re=1
+
 " Syntax highlighting
 syntax on
 set synmaxcol=200
+autocmd FileType html syn region javaScript start=+<script\_[^>]*>+ keepend end=+</script\_[^>]*>+me=s-1 contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
+autocmd FileType html syn sync match htmlHighlight groupthere javaScript "<script"
+autocmd FileType javascript syn sync ccomment javaScriptComment
 
 " NERDTree
 let NERDTreeShowHidden=1
@@ -29,7 +35,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set wrap!
+set nowrap
 
 " zfz overrides
 let g:fzf_commits_log_options = '--all --graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
