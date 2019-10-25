@@ -6,12 +6,13 @@ set autoindent
 set ruler
 set cursorline
 set showcmd
-syntax on
 set clipboard=unnamed
 set modifiable
-set incsearch
-set hlsearch
 let mapleader = " "
+
+" Syntax highlighting. Limited to 200 lines for performance reasons
+syntax on
+set synmaxcol=200
 
 " NERDTree
 let NERDTreeShowHidden=1
