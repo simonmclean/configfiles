@@ -47,6 +47,9 @@ set number
 " Colors
 colorscheme codedark
 let g:airline_theme = 'codedark'
+highlight TabLineFill ctermbg=239
+highlight TabLine ctermbg=239
+highlight CursorLine ctermbg=236
 
 " Mappings
 :map <C-n> :NERDTreeToggle<CR>
@@ -63,7 +66,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'flrnprz/candid.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
