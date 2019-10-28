@@ -10,6 +10,9 @@ set clipboard=unnamed
 set modifiable
 let mapleader = " "
 
+" Auto re-read file when it's changed, if there are no local changes
+set autoread
+
 " Use the old regex engine (performance fix)
 set re=1
 
@@ -50,11 +53,31 @@ let g:airline_theme = 'codedark'
 highlight TabLineFill ctermbg=239
 highlight TabLine ctermbg=239
 highlight CursorLine ctermbg=236
+highlight DiffAdd ctermbg=238
+highlight DiffChange ctermbg=238
+highlight DiffDelete ctermbg=238
+highlight DiffText ctermbg=241  cterm=bold
 
 " Mappings
 :map <C-n> :NERDTreeToggle<CR>
 :map <C-f> :FZF<CR>
 :map <C-a> :Ag<CR>
+
+" Move junk files 
+if !isdirectory($HOME . "/.vim/backup")
+    call mkdir($HOME . "/.vim/backup", "p", 0700)
+endif
+set backupdir=~/.vim/backup//
+
+if !isdirectory($HOME . "/.vim/swap")
+    call mkdir($HOME . "/.vim/swap", "p", 0700)
+endif
+set directory=~/.vim/swap//
+
+if !isdirectory($HOME . "/.vim/undo")
+    call mkdir($HOME . "/.vim/undo", "p", 0700)
+endif
+set undodir=~/.vim/undo//
 
 " Plugins
 call plug#begin('~/.vim/plugged')
