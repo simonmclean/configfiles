@@ -14,7 +14,7 @@ let mapleader = " "
 set autoread
 
 " Use the old regex engine (performance fix)
-set re=1
+autocmd FileType css scss less sass regexpengine=1
 
 " Syntax highlighting
 syntax on
