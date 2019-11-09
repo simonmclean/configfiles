@@ -95,6 +95,5 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
-Plug 'hail2u/vim-css3-syntax'
 
 call plug#end()
