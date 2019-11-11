@@ -96,5 +96,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
