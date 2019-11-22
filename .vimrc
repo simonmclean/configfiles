@@ -93,5 +93,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
+Plug 'posva/vim-vue'
+Plug 'easymotion/vim-easymotion'
+Plug 'mtth/scratch.vim'
+Plug 'vim-scripts/svg.vim'
 
 call plug#end()
