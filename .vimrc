@@ -19,9 +19,6 @@ autocmd FileType css scss less sass regexpengine=1
 " Syntax highlighting
 syntax on
 set synmaxcol=200
-autocmd FileType html syn region javaScript start=+<script\_[^>]*>+ keepend end=+</script\_[^>]*>+me=s-1 contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
-autocmd FileType html syn sync match htmlHighlight groupthere javaScript "<script"
-autocmd FileType javascript syn sync ccomment javaScriptComment
 
 " NERDTree
 let NERDTreeShowHidden=1
