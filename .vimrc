@@ -59,6 +59,8 @@ highlight DiffText ctermbg=241  cterm=bold
 :map <C-n> :NERDTreeToggle<CR>
 :map <C-f> :FZF<CR>
 :map <C-a> :Ag<CR>
+:map \| :vertical split<CR>
+:map - :split<CR>
 
 " Move junk files 
 if !isdirectory($HOME . "/.vim/backup")
