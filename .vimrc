@@ -1,5 +1,5 @@
 " Some basics
-set encoding=utf8
+set encoding=UTF-8
 set incsearch
 set backspace=start,eol,indent
 set autoindent
@@ -9,6 +9,7 @@ set showcmd
 set clipboard=unnamed
 set modifiable
 let mapleader = " "
+set t_Co=256
 
 " Auto re-read file when it's changed, if there are no local changes
 set autoread
@@ -45,20 +46,12 @@ highlight LineNr ctermfg=grey
 set number
 
 " Colors
-colorscheme codedark
-let g:airline_theme = 'codedark'
-highlight TabLineFill ctermbg=239
-highlight TabLine ctermbg=239
-highlight CursorLine ctermbg=236
-highlight DiffAdd ctermbg=238
-highlight DiffChange ctermbg=238
-highlight DiffDelete ctermbg=238
-highlight DiffText ctermbg=241  cterm=bold
+colorscheme codedark_simon
 
 " Mappings
 :map <C-n> :NERDTreeToggle<CR>
-:map <C-f> :FZF<CR>
-:map <C-a> :Ag<CR>
+:map <C-p> :FZF<CR>
+:map <C-f> :Ag<CR>
 :map \| :vertical split<CR>
 :map - :split<CR>
 
