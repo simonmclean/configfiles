@@ -45,9 +45,6 @@ let g:fzf_commits_log_options = '--all --graph --color=always --format="%C(auto)
 highlight LineNr ctermfg=grey
 set number
 
-" Colors
-colorscheme codedark_simon
-
 " Mappings
 :map <C-n> :NERDTreeToggle<CR>
 :map <C-p> :FZF<CR>
@@ -71,6 +68,12 @@ if !isdirectory($HOME . "/.vim/undo")
 endif
 set undodir=~/.vim/undo//
 
+" Nord theme customisation
+augroup nord-theme-overrides
+    autocmd!
+    " autocmd ColorScheme nord highlight Comment ctermfg=4
+augroup END
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -90,5 +93,9 @@ Plug 'posva/vim-vue'
 Plug 'easymotion/vim-easymotion'
 Plug 'mtth/scratch.vim'
 Plug 'vim-scripts/svg.vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
+
+" colorscheme must set set after plugins
+colorscheme nord
