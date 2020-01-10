@@ -94,6 +94,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mtth/scratch.vim'
 Plug 'vim-scripts/svg.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'heavenshell/vim-jsdoc'
 
 call plug#end()
 
