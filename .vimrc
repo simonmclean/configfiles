@@ -98,5 +98,5 @@ Plug 'heavenshell/vim-jsdoc'
 
 call plug#end()
 
-" colorscheme must set set after plugins
+" colorscheme must be set after plugins
 colorscheme nord
