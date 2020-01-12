@@ -27,6 +27,11 @@ let NERDTreeShowHidden=1
 " NERDComment
 let g:NERDSpaceDelims=1
 
+" airline
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+let g:airline_skip_empty_sections = 1
+
 " coc
 let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur', 'coc-eslint']
 autocmd FileType json syntax match Comment +\/\/.\+$+
