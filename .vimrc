@@ -25,16 +25,19 @@ set synmaxcol=200
 let NERDTreeShowHidden=1
 
 " NERDComment
-let g:NERDSpaceDelims=1
+" let g:NERDSpaceDelims=1
 
 " airline
 let g:airline_section_y = ''
 let g:airline_section_z = ''
 let g:airline_skip_empty_sections = 1
 
+let g:polyglot_disabled = ['vue']
+let g:vue_pre_processors='detect_on_enter'
+
 " coc
 let g:coc_global_extensions = ['coc-html', 'coc-css', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-vetur', 'coc-eslint']
-autocmd FileType json syntax match Comment +\/\/.\+$+
+" autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " formatting
 filetype plugin indent on
@@ -92,7 +95,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+" Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 Plug 'posva/vim-vue'
 Plug 'vim-scripts/svg.vim'
